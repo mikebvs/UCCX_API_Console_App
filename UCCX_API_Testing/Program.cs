@@ -68,59 +68,6 @@ namespace UCCX_API_Testing
                 //SkillsToAdd Test Information, this will come from an Excel File on NAS Drive in the future
                 List<SkillsToAdd> nsl = new List<SkillsToAdd>();
 
-                //---------------------------------------------------------------------------------------------------------
-                //TESTING INFORMATION -------------------------------------------------------------------------------------
-                //---------------------------------------------------------------------------------------------------------
-
-
-                ////Users to be updated List, this will come from an Excel File on NAS Drive in the future
-                //List<String> users = new List<String>();
-                //
-                ////User 1
-                //users.Add("Shannon Baskette");
-                //
-                ////User 2
-                //users.Add("Sarah Young");
-                //
-                ////User 3
-                //users.Add("Andrea Cunningham");
-                //
-                ////User 4
-                //users.Add("Sonny Kidd");
-                //
-                //
-                //SkillsToAdd ns = new SkillsToAdd();
-                //
-                ////Skill 1
-                //ns.Name = "CS_Tier1";
-                //ns.CompetencyLevel = "5";
-                //nsl.Add(ns);
-                //
-                ////Skill 2
-                //ns.Name = "CS_Tier2";
-                //ns.CompetencyLevel = "5";
-                //nsl.Add(ns);
-                //
-                ////Skill 3
-                //ns.Name = "CS_Tier3";
-                //ns.CompetencyLevel = "5";
-                //nsl.Add(ns);
-                //
-                ////Skill 4
-                //ns.Name = "CS_Priority";
-                //ns.CompetencyLevel = "8";
-                //nsl.Add(ns);
-                //
-                ////Skill 5
-                //ns.Name = "CS_Renewals";
-                //ns.CompetencyLevel = "8";
-                //nsl.Add(ns);
-                ////---------------------------------------------------------------------------------------------------------
-                ////---------------------------------------------------------------------------------------------------------
-                ////---------------------------------------------------------------------------------------------------------
-
-
-
                 //Initialize Excel Reader Object with file path
                 Reader xlReader = new Reader(filePath);
 
@@ -196,11 +143,6 @@ namespace UCCX_API_Testing
                         Console.WriteLine(">Users Processed: " + usersProcessed.ToString() + "/" + agentData.Count.ToString());
                     }
                 }
-
-            //using (StreamReader r = File.OpenText(logName))
-            //{
-            //    DumpLog(r);
-            //}
             }
         }
         public static string SetEnv()
